@@ -51,12 +51,12 @@
                     body: new FormData(form)
                 })
                 .then(response => {
-                    $("#form_alerts").html("<div class='alert alert-success'>Contact message sent successfully.</div>");
+                    $("#form_alerts").html("<div class='alert alert-success'>Contact message sent successfully. You will get a mail from us within 24 hours!</div>");
                     $('#name').prop('readonly', true);
                     $('#email').prop('readonly', true);
                     $('#message').prop('readonly', true);
                 })
-                .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Contact message not sent.</div>"))
+                .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Contact message not sent. Please, try again!!!</div>"))
         })
     </script>
 </body>
